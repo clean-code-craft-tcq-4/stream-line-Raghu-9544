@@ -42,7 +42,7 @@ TEST_CASE("TestCase3 : InValid Data is sent on Sensor and check whether the valu
 TEST_CASE("TestCase4: ") {
 
     float tempSensorDataInvalid[] = {9.5, 50.5, 49.5, 10.5};
-    float socSensorDataInvalid[] = {};
+    float socSensorDataInvalid[] = {14.5, 85.5, 84.5, 15.5};
     sensorDataExtract sensorDataInputInvalid = {.lengthOfArray = 4, .tempSensorValues = tempSensorDataInvalid, .socSensorValues = socSensorDataInvalid};  
     REQUIRE(streamMainFunction(sensorDataInputInvalid, tempthresoldValues, socthresoldValues, testPrint)==1);
 }
