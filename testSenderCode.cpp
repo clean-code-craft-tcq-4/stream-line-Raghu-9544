@@ -44,6 +44,7 @@ TEST_CASE("TestCase4: ") {
     float tempSensorDataInvalid[] = {};
     float socSensorDataInvalid[] = {};
     sensorDataExtract sensorDataInputInvalid = {.lengthOfArray = 4, .tempSensorValues = tempSensorDataInvalid, .socSensorValues = socSensorDataInvalid};  
+    REQUIRE(streamMainFunction(sensorDataInputInvalid, tempthresoldValues, socthresoldValues, testPrint)==1);
 }
 
 
