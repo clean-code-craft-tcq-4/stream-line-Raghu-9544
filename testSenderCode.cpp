@@ -31,4 +31,14 @@ TEST_CASE("TestCase2 : Valid data is being sent on sensor cutoffs values") {
     REQUIRE(streamMainFunction(sensorDataInput, tempthresoldValues, socthresoldValues, testPrint)==1);
 }
 
+TEST_CASE("TestCase3 : InValid Data is sent on Sensor and check whether the value is corrected before streaming") {
+
+    float tempSensorDataInvalid[] = {60.0, 20.0, 40.0, 5.0};
+    float socSensorDataInvalid[] = {90.0, 25.0, 45.0, 14.0};
+    sensorDataExtract sensorDataInputInvalid = {.lengthOfArray = 4, .tempSensorValues = tempSensorDataInvalid, .socSensorValues = socSensorDataInvalid};  
+    REQUIRE(streamMainFunction(sensorDataInputInvalid, tempthresoldValues, socthresoldValues, testPrint)==1);
+}
+
+
+
 
