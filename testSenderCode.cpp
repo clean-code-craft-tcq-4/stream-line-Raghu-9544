@@ -39,7 +39,7 @@ TEST_CASE("TestCase3 : InValid Data is sent on Sensor and check whether the valu
     REQUIRE(streamMainFunction(sensorDataInputInvalid, tempthresoldValues, socthresoldValues, testPrint)==1);
 }
 
-TEST_CASE("TestCase4: ") {
+TEST_CASE("TestCase4: InValid Data is sent on Sensor and check whether the value is corrected before streaming cutoff values") {
 
     float tempSensorDataInvalid[] = {9.5, 50.5, 49.5, 10.5};
     float socSensorDataInvalid[] = {14.5, 85.5, 84.5, 15.5};
