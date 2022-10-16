@@ -42,6 +42,7 @@ TEST_CASE("TestCase3 : InValid Data is sent on Sensor and check whether the valu
 TEST_CASE("TestCase4: ") {
 
     float tempSensorDataInvalid[] = {};
+    float socSensorDataInvalid[] = {};
 }
 
 
