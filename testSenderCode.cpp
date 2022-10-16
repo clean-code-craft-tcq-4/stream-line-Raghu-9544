@@ -39,7 +39,10 @@ TEST_CASE("TestCase3 : InValid Data is sent on Sensor and check whether the valu
     REQUIRE(streamMainFunction(sensorDataInputInvalid, tempthresoldValues, socthresoldValues, testPrint)==1);
 }
 
-TEST_CASE("TestCase4: ")
+TEST_CASE("TestCase4: ") {
+
+    float tempSensorDataInvalid[] = {};
+}
 
 
 
