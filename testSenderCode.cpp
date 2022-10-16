@@ -25,8 +25,8 @@ TEST_CASE("TestCase1 : Valid data is being sent on sensor") {
 
 TEST_CASE("TestCase2 : Valid data is being sent on sensor cutoffs values") {
 
-    float tempSensorData[] = {11.0, 29.0, 49.0, 35.0};
-    float socSensorData[] = {84.0, 24.0, 64.0, 16.0};
+    float tempSensorData[] = {10.5, 29.0, 49.5, 35.0};
+    float socSensorData[] = {84.5, 24.0, 64.0, 15.5};
     sensorDataExtract sensorDataInput = {.lengthOfArray = 4, .tempSensorValues = tempSensorData, .socSensorValues = socSensorData};  
     REQUIRE(streamMainFunction(sensorDataInput, tempthresoldValues, socthresoldValues, testPrint)==1);
 }
